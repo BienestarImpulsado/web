@@ -1,1 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bienestar Impulsado — Tu guía hacia el equilibrio</title>
+  <meta name="description" content="Planes claros para cuerpo, mente, entorno y propósito. Entrenamientos, respiración/LPF, nutrición práctica y guía motivacional.">
+  <style>
+    :root{--bg:#ffffff;--ink:#2C3E50;--muted:#667085;--brand:#2ECC71;--card:#ECF0F1;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+    header,nav,main,footer{max-width:1080px;margin:auto;padding:1rem}
+    nav{display:flex;gap:.75rem;flex-wrap:wrap}
+    nav a{padding:.5rem .75rem;border-radius:.5rem;text-decoration:none;color:var(--ink);background:var(--card)}
+    nav a:hover{background:var(--brand);color:#fff}
+    .hero{padding:3rem 1rem;background:linear-gradient(180deg,#ECF0F1,transparent);border-bottom:1px solid #e5e7eb}
+    .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:.25rem 0}
+    .hero p{color:var(--muted);max-width:60ch}
+    .btn{display:inline-block;margin-top:1rem;padding:.75rem 1rem;border-radius:.75rem;background:var(--brand);color:#fff;text-decoration:none}
+    section{padding:2rem 1rem;border-bottom:1px solid #f0f2f5}
+    .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+    .card{background:var(--card);padding:1rem;border-radius:1rem}
+    form{display:grid;gap:.75rem;max-width:520px}
+    input,textarea,button{font:inherit}
+    input,textarea{padding:.75rem;border:1px solid #d0d5dd;border-radius:.5rem;width:100%}
+    button{padding:.75rem 1rem;border:none;border-radius:.5rem;background:var(--brand);color:#fff;cursor:pointer}
+    footer{font-size:.9rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <h1>Bienestar Impulsado</h1>
+    <p>Planes prácticos para equilibrar cuerpo, mente, entorno y propósito. Entrena mejor, respira mejor, vive con intención.</p>
+    <a class="btn" href="#contacto">Quiero empezar</a>
+  </header>
+
+  <main>
+    <section id="sobre" aria-labelledby="t-sobre">
+      <h2 id="t-sobre">Sobre nosotros</h2>
+      <p>Somos un proyecto educativo que integra entrenamiento progresivo, respiración/LPF y hábitos nutricionales sencillos. Te guiamos con pasos claros y contenidos accesibles para avanzar semana a semana.</p>
+    </section>
+
+    <section id="servicios" aria-labelledby="t-servicios">
+      <h2 id="t-servicios">Servicios</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Entrenamiento por niveles</h3>
+          <p>Rutinas N1–N4 con progresión semanal y vuelta a la calma. En casa o gimnasio.</p>
+        </article>
+        <article class="card">
+          <h3>Respiración y LPF</h3>
+          <p>Secuencias técnicas para postura, control y activación abdominal segura.</p>
+        </article>
+        <article class="card">
+          <h3>NutriConciencia</h3>
+          <p>Guías prácticas para comer mejor sin dietas rígidas. Auditoría de 7 días.</p>
+        </article>
+        <article class="card">
+          <h3>Asistente digital</h3>
+          <p>Respuestas claras a dudas frecuentes. Consejos y recordatorios.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" aria-labelledby="t-contacto">
+      <h2 id="t-contacto">Contacto</h2>
+      <p>¿Preguntas o colaboración? Escríbenos. Sustituye el correo por el tuyo antes de publicar.</p>
+      <form action="mailto:contacto@bienestar-impulsado.example" method="post" enctype="text/plain">
+        <label>Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="5" required></textarea>
+        </label>
+        <button type="submit">Enviar</button>
+      </form>
+      <p>O envía un correo a <a href="mailto:contacto@bienestar-impulsado.example">contacto@bienestar-impulsado.example</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="y"></span> Bienestar Impulsado. Recurso educativo independiente.</p>
+    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
 
